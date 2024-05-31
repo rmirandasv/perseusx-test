@@ -1,3 +1,15 @@
+/**
+ * Name: Ronald Ernesto Miranda
+ * Date: may 30, 2024
+ * Purpose of the script: This script iterates over a list of objects, adds the current date to each one and
+ * shows only active records with their name, date and favorite movie.
+ * The script also allows to sort the records by name, favorite food, favorite movie and status.
+ * 
+ * Question for another team member for complete this task: 
+ * - How would you improve the sorting function to allow sorting by ascending and descending order? I used array.reverse() to reverse the order.
+ *  Do you think this is the best approach?
+ * 
+ */
 import { useCallback, useEffect, useState } from 'react'
 import { addCurrentDate, getActiveRecords, PERSON_PROPERTIES, sortByProperty } from "./utils/person";
 
@@ -69,7 +81,7 @@ function App() {
       <nav className="bg-gray-800 w-full p-4">
         <div className="max-w-7xl w-full mx-auto flex justify-between items-center">
           <span className="text-2xl text-gray-100">PerseusX test</span>
-          <a href="https://github.com/rmirandasv/perseusx-test" className="text-gray-100 text-sm">View on GitHub</a>
+          <a target="_blank" href="https://github.com/rmirandasv/perseusx-test" className="text-gray-100 text-sm">View on GitHub</a>
         </div>
       </nav>
       <div className="mt-56 flex items-center justify-center">
